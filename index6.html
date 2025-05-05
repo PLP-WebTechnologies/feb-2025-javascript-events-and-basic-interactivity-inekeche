@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Handling</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>This is event handling script</h1>
+
+    <button id="clickBtn">Click this button</button>
+    <div id="hoverBox">Hover Over Me</div>
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+    <div id="secretBox">Double-click or long press me</div>
+
+    <p id="output"></p>
+  </div>
+
+
+  <!-- Button -->
+  <h2>Interactive Button</h2>
+  <button class="toggle-btn" onclick="toggleButton(this)">Click Me</button>
+
+  <!-- Gallery -->
+  <h2>Image Slideshow</h2>
+  <div class="gallery">
+    <img id="gallery-img" src="https://placekitten.com/500/300" alt="Gallery">
+    <div>
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <h2>Tabs</h2>
+  <div class="tabs">
+    <div class="tab-buttons">
+      <button onclick="openTab(0)" class="active">Tab 1</button>
+      <button onclick="openTab(1)">Tab 2</button>
+      <button onclick="openTab(2)">Tab 3</button>
+    </div>
+    <div id="tab-0" class="tab-content active">This is the content of Tab 1.</div>
+    <div id="tab-1" class="tab-content">Here is some content for Tab 2.</div>
+    <div id="tab-2" class="tab-content">Tab 3 content goes here.</div>
+  </div>
+
+
+  
+  <form id="signupForm" novalidate>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" required />
+      <div class="error" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password *</label>
+      <input type="password" id="password" required />
+      <div class="error" id="passwordError"></div>
+    </div>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script src="script6.js"></script>
+</body>
+</html>
+
